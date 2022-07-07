@@ -1,0 +1,13 @@
+<p>home works!</p>
+<input type="text" name="id" [(ngModel)]="id" />
+<div *ngIf="!id">
+  <br />
+  <button (click)="navigar()">no manda nada</button>
+  <br />
+  <a routerLink="/post">no manda nada</a>
+</div>
+<div *ngIf="id">
+  <br />
+  <button (click)="navigarPost(id)">ir a otra pagina v2 parametro {{id}}</button>
+  <br />
+</div>
